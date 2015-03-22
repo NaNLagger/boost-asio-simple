@@ -1,6 +1,8 @@
 # boost-asio-simple
 for study 
 
-Compile:
-  server: g++ server.cpp -o server -lboost_system
-  client: g++ client.cpp -o client -lboost_system
+<h4>Compile:</h4><br/>
+  <ul>
+    <li><b>server</b>: g++ server.cpp -o server -lboost_system</li>
+    <li><b>client</b>: g++ client.cpp -o client -lboost_system</li>
+  </ul>
