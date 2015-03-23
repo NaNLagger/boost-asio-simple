@@ -96,8 +96,15 @@ class Server {
 };
 
 int main(int argc, char* argv[]) {
+  int port;
+  if(argc < 2) {
+    cerr << "Error run with port: server <port>\n";
+    return -1;
+  } else {
+    port = atoi(argv[1]);
+  }
 	io_service service;
-	Server s(service, 2001);
+	Server s(service, port);
     service.run();
 	return 0;
 }
